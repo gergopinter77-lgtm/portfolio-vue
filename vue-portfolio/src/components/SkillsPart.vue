@@ -8,7 +8,8 @@
       <div v-for="(skill, index) in skills" :key="skill.id" class="relative aspect-square bg-white rounded-sm flex items-center justify-center group cursor-pointer col-span-1" :class="{ 'in-view': isVisible }" :style="{ '--i': index }" @click="togglePopup(skill.id)" @mouseleave="closeIfNotClicked(skill.id)">
         <img :src="skill.logo" :alt="skill.title" class="w-3/4 h-3/4 object-contain grayscale hover:grayscale-0 transition duration-300"/>
 
-        <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 bg-[#1a0505] border border-red-900 text-white px-4 py-3 rounded shadow-lg w-40 text-center pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-10" :class="activeSkill === skill.id ? 'opacity-100 pointer-events-auto' : 'opacity-0 group-hover:opacity-100'">
+       <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 bg-[#1a0505] border border-red-900 text-white px-4 py-3 rounded shadow-lg w-40 text-center transition-opacity duration-200 z-10"
+            :class="activeSkill === skill.id ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto'">
           <div class="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-red-900"></div>
           <p class="text-sm font-semibold mb-2 text-red-400">{{ skill.title }}</p>
           <RouterLink to="/works" class="inline-block bg-red-700 hover:bg-red-600 text-white text-xs font-bold px-3 py-1 rounded transition-colors duration-150">

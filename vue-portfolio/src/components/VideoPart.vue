@@ -4,7 +4,7 @@
             :class="{ 'in-view' : isVisible }"
             :style="{ '--i': 0 }"
             >
-            <h3 class="text-white font-[Biorhyme_Expanded] text-3xl">
+            <h3 class="text-white font-[Biorhyme_Expanded] md:text-3xl text-2xl text-center md:text-left">
                 <span class="text-red-500 ">M</span>y <span class="text-red-500">V</span>ideo <span class="text-red-500 ">C</span>V
             </h3>
         </div>
