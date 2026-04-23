@@ -18,12 +18,6 @@ const foldersData = [
         image: 'https://i.imgur.com/3YDECVc.png',
         url: 'https://github.com/gergopinter77-lgtm/recipie-page-mandatory',
       },
-      {
-        id: 3, name: 'Vue And Tailwind practice', ext: 'Vue', year: '2026', tagColor: '#b91c1c',
-        description: 'A small project to practice Vue and Tailwind.',
-        image: '/projects/dashboard.png',
-        url: 'https://github.com/gergopinter77-lgtm/vue-tailwind-practice',
-      },
     ],
   },
   {
